@@ -1,0 +1,369 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+#header {
+  height: 110px;
+  font-size: larger;
+}
+
+@media (max-width: 786px) {
+  #header {
+    height: 250px;
+    font-size: medium;
+  }
+  #Navbtn {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  #header {
+    height: 60px;
+    font-size: small;
+  }
+}
+#hero {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 210px;
+  left: 80%;
+  border-radius: 50%;
+}
+@media (max-width: 786px) {
+  #hero {
+    margin-top: 830px;
+    margin-left: -20%;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+#heroImgthree {
+  width: 450px;
+  height: 550px;
+  border-radius: 20px;
+  margin-left: 7%;
+}
+
+#heroieH1 {
+  margin-top: -32%;
+  font-size: 100px;
+  margin-left: 24%;
+}
+
+#heroiesp {
+  margin-top: -40px;
+  margin-left: 42%;
+}
+
+/* Media Query for screens with a max-width of 768px */
+@media (max-width: 768px) {
+  #heroImgthree {
+    width: 350px;
+    height: 500px;
+    margin-left: 14%;
+  }
+
+  #heroieH1 {
+    font-size: 80px;
+    margin-left: 1%;
+    margin-top: 10%;
+  }
+
+  #heroiesp {
+    margin-left: 8%;
+    margin-top: 10px;
+  }
+}
+
+/* Media Query for screens with a max-width of 480px */
+@media (max-width: 480px) {
+  #heroImgthree {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  #heroieH1 {
+    font-size: 50px;
+    margin-left: 0;
+    margin-top: -20%;
+    text-align: center;
+  }
+
+  #heroiesp {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+#one {
+  font-family: "Bebas Neue", sans-serif;
+}
+.head1 {
+  font-size: 94px;
+}
+#head1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 86px;
+}
+
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(
+    circle,
+    rgb(0, 0, 0),
+    rgb(0, 0, 0),
+    transparent
+  );
+}
+
+.error-content {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgb(0, 0, 0);
+  animation: fadeIn 1s ease-in-out;
+}
+.error-title {
+  font-size: 200px;
+  color: #ff4b5c;
+  margin: 0;
+  font-weight: bold;
+  background: -webkit-linear-gradient(#f85032, #e73827);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -5px;
+  animation: float 2s infinite ease-in-out;
+}
+.error-message {
+  font-size: 32px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  font-weight: 900;
+  margin-bottom: 30px;
+  color: #000000;
+  opacity: 0.8;
+}
+.home-link {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 21px;
+  color: #fff;
+  background-color: #ff6b6b;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  background-color: #ff4c4c;
+}
+.contact-form-container {
+  width: 770px;
+  height: 700px;
+  margin: 30px 350px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 20 20px 5px rgba(255, 0, 0, 0.377);
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 74px;
+  font-family: "Bebas Neue", sans-serif;
+  color: rgb(12, 66, 124);
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+}
+
+.buttontwo {
+  display: block;
+  width: 80%;
+  padding: 7px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 26px;
+  cursor: pointer;
+  margin-top: -30px;
+  margin-left: 60px;
+  transition: background-color 0.3s ease;
+}
+
+.buttontwo:hover {
+  background-color: #0056b3;
+}
+/* Media Query for devices with width of 486px or below */
+@media (max-width: 786px) {
+  .contact-form-container {
+    max-width: 95%;
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 28px; /* Further reduce font size for small screens */
+    margin-bottom: 15px;
+  }
+
+  label {
+    font-size: 16px; /* Reduce label font size */
+  }
+
+  input,
+  textarea {
+    font-size: 14px; /* Reduce input and textarea font size */
+  }
+
+  .buttontwo {
+    font-size: 16px; /* Adjust button font size */
+    padding: 8px; /* Adjust button padding */
+  }
+}
+
+.login-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+.form {
+  background: #fff;
+  padding: 40px;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.heading1 {
+  margin-bottom: 20px;
+  font-size: 64px;
+  color: #063488;
+  font-weight: bold;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #555;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 22px;
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.message a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.message a:hover {
+  text-decoration: underline;
+}
+#Ecommerceimgs {
+  height: 210px;
+}
+#BoderEccomerce {
+  border-radius: 4px;
+}
+
+@media (max-width: 786px) {
+  #ProductCard {
+    margin-left: 70px;
+  }
+}
+
+@media (max-width: 786px) {
+  #ProductCardOne {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
